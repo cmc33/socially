@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { FormGroup, FormBuilder } from '@angular/forms';
+
+import { FormGroup, FormBuilder, Validators } from '@angular/forms'
  
 import template from './parties-form.component.html';
  
@@ -16,9 +17,9 @@ export class PartiesFormComponent implements OnInit {
  
   ngOnInit() {
     this.addForm = this.formBuilder.group({
-      name: [],
+      name: ['', Validators.required],
       description: [],
-      location: []
+      location: ['', Validators.required]
     });
   }
 }
