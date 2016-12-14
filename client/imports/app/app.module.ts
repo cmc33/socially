@@ -22,7 +22,9 @@ import { PARTIES_DECLARATIONS } from './parties';
     AppComponent,
     ...PARTIES_DECLARATIONS
   ],
-  
+  providers: [
+    ...ROUTES_PROVIDERS
+  ],
   bootstrap: [
     AppComponent
   ]
