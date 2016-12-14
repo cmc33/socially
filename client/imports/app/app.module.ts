@@ -5,6 +5,7 @@ import { AccountsModule } from 'angular2-meteor-accounts-ui';
 
 import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
+import { routes, ROUTES_PROVIDERS } from './app.routes';
 import { routes } from './app.routes';
 import { PARTIES_DECLARATIONS } from './parties';
 
@@ -21,6 +22,7 @@ import { PARTIES_DECLARATIONS } from './parties';
     AppComponent,
     ...PARTIES_DECLARATIONS
   ],
+  
   bootstrap: [
     AppComponent
   ]
